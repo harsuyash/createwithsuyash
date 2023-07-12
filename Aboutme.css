@@ -1,0 +1,304 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+}
+
+@font-face {
+  font-family: "Switzer";
+  src: url(Switzer-Variable.ttf);
+}
+
+@font-face {
+  font-family: "Boska";
+  src: url(Boska-Variable.ttf);
+}
+
+body{
+  /* body font */
+  font-family: "Switzer", sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  color: #292929;
+}
+
+/* Type scale */
+h1{
+  font-family: "Boska", serif;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 84px;
+  letter-spacing: 1.2px;
+  margin-bottom: 24px;
+  -webkit-text-stroke: 0.75px #292929;
+}
+
+h2{
+  font-family: "Switzer", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 60px;
+}
+
+h3{
+  font-family: "Switzer", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 42px;
+}
+
+h4{
+  font-family: "Switzer", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+a{
+    text-decoration: none;
+    color: #292929;
+}
+
+.tags{
+
+  font-family: "Switzer", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: #777777;
+  padding-top: 16px;
+
+
+}
+
+.center{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+
+
+/* TOP header */
+.logo{
+  display: block;
+  width: 24px;
+}
+
+.header-container{
+/* Flexbox layout */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  
+
+/*Spacing*/
+  padding: 16px 32px 16px 32px ;
+
+/* Appearance*/
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.menu{
+/* Flexbox layout */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 48px;
+
+/* Appearance */
+  list-style: none;
+}
+
+.menu a{
+  /*Spacing*/
+      padding-bottom: 4px;
+}
+
+.current-page{
+  font-weight: 600;
+  border-bottom: 2px solid #ED1D68;
+}
+
+/* Main content */
+main{
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-top: 84px;
+
+}
+
+.home-scroll{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 740px;
+  margin-bottom: 120px;
+}
+
+.home-scroll a{
+  margin-top: 48px;
+}
+
+.home-scroll h2{
+  margin-bottom: 24px;
+
+}
+
+
+.CTA{
+  /* Layout */
+
+  width: fit-content;
+  display: flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  /* Appearance */
+  border-radius: 4px;
+  background: #191919;
+  color: white;
+  font-weight: 500;
+
+  border: none;
+  outline: none;
+  font: inherit;
+  transition: background 200ms
+}
+
+.CTA:hover{
+  cursor: pointer;
+  background: #ED1D68
+}
+
+.About-me{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.About-me img{
+  border-radius: 100px;
+}
+
+.About-me p{
+  margin-bottom: 18px;
+}
+
+footer{
+
+  padding: 72px 32px 180px 32px;
+  background: #FFF6FA;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contact-container{
+  max-width: 740px;
+  margin: auto;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 48px;
+  display: flex;
+}
+
+
+.name-tooltip {
+  position: relative;
+  display: inline-block;
+
+}
+
+.name-tooltip .name-tooltiptext {
+  visibility: hidden;
+  width: 360px;
+
+  font-family: "switzer", sans-serif;
+  font-weight: 600;
+  font-size: 24px;line-height: 32px;
+
+  color: #292929;
+  text-align: left;
+  border-radius: 6px;
+  padding-left: 8px;
+  position: absolute;
+  z-index: 1;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.5s;
+  left:250%;
+  top:-0.75px;
+
+}
+
+
+
+.name-tooltip:hover .name-tooltiptext {
+  visibility: visible;
+  opacity: 1;
+  animation-delay: 0.8s;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+@media only screen and (max-width: 800px) {
+  .About-me {
+    flex-direction: column;
+    gap:24px;
+    padding-bottom: 32px;
+  }
+
+}
+
+
+@media only screen and (max-width: 850px) {
+  .name-tooltip:hover .name-tooltiptext {
+    visibility: hidden;
+  }
+}
