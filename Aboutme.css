@@ -320,7 +320,11 @@ footer{
     visibility: hidden;
   }
 
-  .About-me {
+}
+
+
+@media only screen and (max-width: 720px) {
+.About-me {
     flex-direction: column;
     gap:24px;
     padding-bottom: 32px;
