@@ -291,6 +291,15 @@ footer{
   opacity: 1;
 }
 
+@media only screen and (max-width: 800px) {
+
+  .About-me {
+    flex-direction: column;
+    gap:24px;
+    padding-bottom: 32px;
+  }
+}
+
 
 
 @media only screen and (max-width: 640px) {
@@ -309,11 +318,7 @@ footer{
     gap: 24px;
   }
 
-.About-me {
-    flex-direction: column;
-    gap:24px;
-    padding-bottom: 32px;
-  }
+
   
 }
 
