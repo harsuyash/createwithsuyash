@@ -291,14 +291,6 @@ footer{
   opacity: 1;
 }
 
-@media only screen and (max-width: 800px) {
-
-  .About-me {
-    flex-direction: column;
-    gap:24px;
-    padding-bottom: 32px;
-  }
-}
 
 
 
@@ -323,8 +315,14 @@ footer{
 }
 
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 860px) {
   .name-tooltip:hover .name-tooltiptext {
     visibility: hidden;
+  }
+
+  .About-me {
+    flex-direction: column;
+    gap:24px;
+    padding-bottom: 32px;
   }
 }
