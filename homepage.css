@@ -374,7 +374,13 @@ footer{
   }
 
   .linkedin{
-    visibility: hidden;
+    display: none;
+  }
+
+  .header-container{
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
   }
 }
 
