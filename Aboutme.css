@@ -291,14 +291,6 @@ footer{
 }
 
 
-@media only screen and (max-width: 800px) {
-  .About-me {
-    flex-direction: column-reverse;
-    gap:24px;
-    padding-bottom: 32px;
-  }
-
-}
 
 @media only screen and (max-width: 640px) {
    h1{
@@ -315,6 +307,13 @@ footer{
     justify-content: center;
     gap: 24px;
   }
+
+.About-me {
+    flex-direction: column-reverse;
+    gap:24px;
+    padding-bottom: 32px;
+  }
+  
 }
 
 
