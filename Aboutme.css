@@ -298,6 +298,16 @@ footer{
     padding-bottom: 32px;
   }
 
+  .linkedin{
+    display: none;
+  }
+
+  .header-container{
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+  }
+
 }
 
 
