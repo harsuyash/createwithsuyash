@@ -133,7 +133,6 @@ main{
   margin-left: 32px;
   margin-right: 32px;
   margin-top: 84px;
-  width: 100%;
 
 }
 
@@ -368,6 +367,10 @@ footer{
   .card{
     height: auto;
   }
+
+  h1{
+    font-size: 60px;
+    line-height: 72px;
 }
 
 
