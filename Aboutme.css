@@ -298,6 +298,14 @@ footer{
     padding-bottom: 32px;
   }
 
+}
+
+@media only screen and (max-width: 800px) {
+   h1{
+    font-size: 48px;
+    line-height: 60px;
+  }
+
   .linkedin{
     display: none;
   }
@@ -307,7 +315,6 @@ footer{
     justify-content: center;
     gap: 24px;
   }
-
 }
 
 
