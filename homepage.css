@@ -370,7 +370,7 @@ footer{
 }
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 640px) {
    h1{
     font-size: 48px;
     line-height: 60px;
