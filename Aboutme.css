@@ -189,7 +189,8 @@ main{
 }
 
 .About-me img{
- width: 200px;
+ width: 150px;
+ border-radius: 100px;
 }
 
 .About-me p{
@@ -309,7 +310,7 @@ footer{
   }
 
 .About-me {
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap:24px;
     padding-bottom: 32px;
   }
