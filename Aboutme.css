@@ -189,7 +189,7 @@ main{
 }
 
 .About-me img{
-  border-radius: 100px;
+ width: 200px;
 }
 
 .About-me p{
@@ -293,7 +293,7 @@ footer{
 
 @media only screen and (max-width: 800px) {
   .About-me {
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap:24px;
     padding-bottom: 32px;
   }
