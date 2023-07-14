@@ -152,6 +152,21 @@ main{
 
 }
 
+.CTA2{
+  display: flex;
+  padding: 8px 12px;
+  align-items: center;
+  gap: 12px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.CTA2:hover{
+  background: #FFE7F1;
+  font-weight: 600;
+
+}
+
 
 .CTA{
   /* Layout */
