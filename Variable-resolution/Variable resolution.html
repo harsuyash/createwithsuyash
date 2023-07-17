@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title> Har Suyash's UX Portfolio </title>
+
+  <!-- CSS -->
+  <link href="Variable resolution.css" rel="stylesheet" type="text/css">
+
+  <!-- RESPONSIVE -->
+  <meta name="viewport" content="width= device-width">
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/png" href="../hsb_favicon.png" >
+
+</head>
+
+<body>
+
+  <header class="header-container" width="100%">
+
+    <!--header item 1 - logo-->
+    <div class="name-tooltip">
+      <a href="../index.html">
+        <img src="../hsb_logo.svg" alt="Har Suyash Logo" width="56px" class="center">
+      </a>
+      <p class="name-tooltiptext">Har Suyash Bahadur</p>
+    </div>
+
+    <!--header item 2 - navbar-->
+    <span>
+      <nav>
+        <ul class="menu">
+          <li>
+            <a href="../index.html#projects">Projects</a>
+          </li>
+
+          <li>
+            <a href="../Aboutme.html">About me</a>
+          </li>
+        </ul>
+      </nav>
+    </span>
+
+    <!--header item 3 - linkedin-->
+
+    <a href="https://www.linkedin.com/in/harsuyash/" target="_blank" rel="nofollow" aria-label="LinkedIn"> <img src="../linkedin.svg" alt="" width="24px" class="center"> </a>
+
+
+  </header>
+
+
+  <main>
+
+    <div class="home-scroll">
+
+      <!--Intro to project-->
+
+      <div class="intro">
+        <h1> Accessible error signifier for valiables</h1>
+
+        <span style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 16px; margin-top:36px; margin-bottom:36px;">
+
+          <span style="display: flex;align-items: center;gap: 16px;">
+            <img src="../postman_logo.png" alt="" width="24px">
+            <p class="tags">Postman</p>
+          </span>
+
+          <p class="tags"> · </p>
+
+          <p class="tags">Product designer</p>
+
+          <p class="tags"> · </p>
+
+          <p class="tags">Lead on the initiative</p>
+
+
+        </span>
+
+        <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 24px; align-self: stretch;">
+
+          <h4> Key contributions: </h4>
+
+          <ul style="display: flex; flex-direction: column; align-items: flex-start; gap: 16px;">
+            <li> A small UI change to highlight errors in variables that increased success of critical flows. </li>
+            <li> Made sure the designs are colour-blind accessible yet not distracting for anyone. </li>
+            <li> Went through systematic explorations and user testing to get the team’s confidence. </li>
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!--BIG Image-->
+    <img src="Variable resolution.png" width="100%">
+
+    <!--Main content-->
+    <div class="home-scroll">
+
+      <!--Part 1: Background-->
+      <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 48px; padding-top:84px;">
+
+        <h2>Background</h2>
+
+        <!--Sub-Part 1-->
+        <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 24px;">
+          <h4>What is Postman?</h4>
+          <p>
+            Postman is a tool used by software developers to develop, test and deploy APIs aka "developer stuff"
+          </p>
+        </div>
+
+        <!--Sub-Part 2-->
+        <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 24px;">
+          <h4>What are variables in Postman?</h4>
+          <p>
+            One integral part of our user's workflow, just like most other developer workflows, is to use variables to improve re-usability and their productivity. However, they had a problem in our product with knowing if the variables were assigned a value. This led to errors that they had to spend a lot of time trying to debug, not understanding the problem was in the variables.
+          </p>
+        </div>
+
+      </div>
+
+      <!--Part 2: The problem-->
+      <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 48px; padding-top:84px;">
+
+        <h2>The problem</h2>
+
+
+        <!--Sub-Part 1-->
+        <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 24px;">
+          <h4>Are there any errors in my variables?</h4>
+          <p>
+            Why don’t you try to answer this question? From the two variables shown below, which one is resolved and which is unresolved?
+          </p>
+          <!--Image with description-->
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 16px; margin:12px 0px;">
+            <img src="2-variables.png" alt="image of two variables- one orange and one red" width="70%">
+            <img src="options.png" alt="Options for which variable is unresolved- orange one or red one?" width="100%">
+            <p class="tags" style="max-width:560px">Which one is an unresolved variable?</p>
+          </div>
+          <p>
+            I have made this task extremely simple by putting these next to each other, isolated and big. Yet, one could second guess as to which one is unresolved.
+          </p>
+          <p>
+            Imagine when a user encounters any one of it in the interface among other things. It can lead to a frustrating experience of sending an API request with an unresolved variable, getting an error and then wondering why.
+          </p>
+          <p>
+            Now the problem seems simple enough. We had used orange (left one) which is our brand colour to show resolved variables and red (right one) to show unresolved because red = error (especially in developer interfaces).
+          </p>
+        </div>
+
+        <!--Sub-Part 2-->
+        <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 24px;">
+          <h4>Problem solved! ...or is it?</h4>
+
+          <p>
+            An obvious solution is to show the resolved variable as green…
+          </p>
+
+          <!--Image with description-->
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 16px; margin:12px 0px;">
+            <img src="green-red.png" alt="image of two variables- one green and one red" width="70%">
+          </div>
+          <p>
+            Problem solved 🎉
+          </p>
+          <p>
+            Or is it? Have a look at the following images and decide-
+          </p>
+
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 16px; margin:12px 0px;">
+            <img src="red-weak.png" alt="image of two variables as seen by someone with red-green colourblindness" width="70%">
+            <img src="red-blind.png" alt="" width="70%">
+            <p class="tags" style="max-width:560px">Simulation for red-green colourblindness</p>
+          </div>
+
+          <p>
+            These don't look as good and this is how 1 in 12 men in the world could see.
+          </p>
+
+          <p>
+            Yes, we often use red and green to highlight yes and no, stop and go, success and error, etc. but relying only on colours is not accessible for colourblind people.
+          </p>
+
+          <p>
+            Designing for accessibility not only benefits people who may not perceive the world as we do but it could make the product more usable by everyone. Let's see how
+          </p>
+
+        </div>
+
+      </div>
+
+      <!--Part 3: The Solution-->
+      <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 48px; padding-top:84px;">
+
+        <h2>The solution</h2>
+
+        <!--Sub-Part 1-->
+        <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 24px;">
+          <h4>Add a red box behind the text to highlight</h4>
+
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 16px; margin:12px 0px;">
+            <img src="red-box.png" alt="Image of the unresolved variable highlighted" width="100%">
+          </div>
+
+          <p>
+            This not only made the design colourblind accessible but also helped highlight the unresolved errors in a way above the resolved ones.
+          </p>
+
+          <p>
+            Imagine a scenario where a user sends an API request with some unresolved variables. The request fails and their eyes are caught by the highlighted things in the UI.
+          </p>
+
+          <p>
+            This also invites them to hover over it and gives us an opportunity to provide more information or trigger a flow for them to resolve it.
+          </p>
+
+          <p>
+            That is precisely what we did…
+          </p>
+
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 16px; margin:12px 0px;">
+            <img src="hover.png" alt="showing a pop-over while hovering on highlighted variable" width="100%">
+            <p class="tags" style="max-width:560px">Giving the variable a hover affordance helps the user discover more information to resolve it</p>
+          </div>
+
+          <p>
+            This also keeps the UI cohesive without using too many colours to distract.
+          </p>
+
+        </div>
+
+      </div>
+
+      <!--Part 3: The result-->
+      <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 48px; padding-top:84px;">
+
+        <h2>The result</h2>
+
+        <p>
+          The small change was able to help the users send lesser requests with the unresolved variables that would eventually lead to an error.
+        </p>
+
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 16px; margin:12px 0px;">
+          <img src="graph-before.png" alt="Graph showing usage of unresolved variables increasing to 10% before we released the improvement" width="100%">
+          <p class="tags" style="max-width:560px">The top line shows the users sending requests with variables as a % and the bottom shows the users sending requests with unresolved variables</p>
+          <img src="graph-after.png" alt="Graph showing usage of unresolved variables falling to ~6% after we released the improvement" width="100%">
+          <p class="tags" style="max-width:560px">While the users sending requests with variables was increasing, the users who had unresolved variables in request decreased steadily</p>
+        </div>
+
+      </div>
+
+      <!--Part 3: The process-->
+      <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 48px; padding-top:84px;">
+
+        <h2>Process of designing a rectangle</h2>
+
+        <!--Sub-Part 1-->
+        <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 24px;">
+          <h4>Multiple explorations</h4>
+          <p>
+            The change was simple enough and apart from making it colourblind accessible, a no brainer to highlight the errors. However, to make even a small change in primary part of the interface used by millions, you have to make a strong case for it.
+          </p>
+          <p>
+            In order to be sure we are doing the right thing, I explored as many ways of representing variable resolution as possible instead of settling for one.
+          </p>
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 16px; margin:12px 0px;">
+            <img src="Explorations.png" alt="Screenshot from figma showing various explorations" width="100%">
+            <p class="tags" style="max-width:560px">Exploring multiple ways of representing the resolved and unresolved variables</p>
+          </div>
+        </div>
+
+        <!--Sub-Part 2-->
+        <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 24px;">
+          <h4>Analysing explorations</h4>
+          <p>
+            After having fun on the canvas with these different ideas, I had to enter the second diamond of the design process aka converge by analysing the explorations, finding patterns and short listing approaches.
+          </p>
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 16px; margin:12px 0px;">
+            <img src="analysis.png" alt="Screenshot from a document written to analyse explorations" width="100%">
+            <p class="tags" style="max-width:560px">Representational artefact: wrote a document to analyse the explorations</p>
+          </div>
+        </div>
+
+        <!--Sub-Part 3-->
+        <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 24px;">
+          <h4>Consolidating learnings into checklist</h4>
+          <p>
+            While working with a team and having to take a visual decisions, a lot of biases and personal opinions can creep in. In order to avoid it, we tried to set some ground rules about what we exactly expect the result to be based on our discussion so far.
+          </p>
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 16px; margin:12px 0px;">
+            <img src="ground-rules.png" alt="Screenshot from a document written to analyse explorations" width="100%">
+            <p class="tags" style="max-width:560px">Consolidating some ground rules from the discussion with team to keep things focussed</p>
+          </div>
+        </div>
+
+        <!--Sub-Part 4-->
+        <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 24px;">
+          <h4>Systematic explorations for testing</h4>
+          <p>
+            After this, we tried to take a systematic look at the explorations and see what are the design elements we are using and how to represent resolved and unresolved variables using those.
+          </p>
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 16px; margin:12px 0px;">
+            <img src="systematic-exploration.png" alt="A table with finalised design elements" width="100%">
+            <p class="tags" style="max-width:560px">Systematic approach at the explorations</p>
+          </div>
+          <p>
+            With more clarity in our minds, it was time to take things to the court! I mean users. We interviewed 9 people internally and 3 of those had red-green colour blindness. We discovered the most of the users with colourblindness also preferred something simpler like background instead of something very obvious (that we though would be more accessible) as things like borders and dotted lines affected the readability.
+          </p>
+          <p>
+            And with that we released our design improvement :)
+          </p>
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 16px; margin:12px 0px;">
+            <img src="final-screen.png" alt="A table with finalised design elements" width="150%">
+          </div>
+        </div>
+
+      </div>
+
+      <!--END-->
+      <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 48px; padding-top:84px;">
+        <h2>Thank You!</h2>
+      </div>
+
+      <div style="margin-top:84px">
+      <!-- Cards for postman projects-->
+      <ul class="card-layout">
+        <!-- Cards 1-->
+        <li class="card">
+
+          <div class="card-inside">
+
+            <div><img src="../API testing.png" alt=""></div>
+
+            <!-- Cards 1 content -->
+            <div>
+              <h4> <a href="../Debugging-flow/Improved-debugging-flow.html" class="card-link">Improved debugging flow</a> </h4>
+              <p>
+                Led the problem discovery, journey mapping and design of the debuging flow for API tests in Postman.
+              </p>
+
+              <p class="tags"> UI/UX design </p>
+
+            </div>
+
+          </div>
+
+          <!-- Cards 1 hover line -->
+          <div class="card-hover"></div>
+        </li>
+
+        <!-- Cards 3-->
+        <li class="card">
+
+          <div class="card-inside">
+
+            <div><img src="../EDUS2.png" alt=""></div>
+
+            <!-- Cards 3 content -->
+            <div>
+              <h4> <a href="../Engagement-in-learning/engagement-in-learning.html" class="card-link">Engagement in learning</a> </h4>
+              <p>
+                An exploratory research to improve students' emotional and cognitive engagement in class participation.
+              </p>
+
+              <p class="tags"> Design research </p>
+
+            </div>
+
+          </div>
+
+          <!-- Cards 3 hover line -->
+          <div class="card-hover"></div>
+        </li>
+
+        <!-- Cards 1-->
+        <li class="card">
+
+          <div class="card-inside">
+
+            <div><img src="../POUR.png" alt=""></div>
+
+            <!-- Cards 1 content -->
+            <div>
+              <h4> <a href="../Pour/Pour.html" class="card-link">Assistive device to pour</a> </h4>
+              <p>
+                A device that helps visually impaired users safely pour hot liquids by communicating with its form.
+              </p>
+
+              <p class="tags"> Industrial design </p>
+
+            </div>
+
+          </div>
+
+          <!-- Cards 1 hover line -->
+          <div class="card-hover"></div>
+        </li>
+      </ul>
+      </div>
+
+
+    </div>
+
+  </main>
+
+
+  <footer id="contact">
+
+    <!-- Contact -->
+
+    <div class="contact-container">
+      <div style="width: 100%; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+        <h2>Get in touch</h2>
+        <p>Let's connect to discuss how I can bring value to your team as a designer.</p>
+      </div>
+
+      <!--Email-->
+      <div style=" width: 90%; justify-content: space-between; align-items: center; display: inline-flex; padding-left: 16px; padding-right: 16px; padding-top: 12px; padding-bottom: 12px; border-radius: 4px; border: 0.50px #191919 solid;">
+
+        <input type = "text" value="harsuyash07@gmail.com" id="myInput" style=" width: 60%; color: #292929; font-size: 18px; font-family: Switzer; font-weight: 400; line-height: 27px; word-wrap: break-word; border: none; background: none" readonly>
+
+        <div class="tooltip">
+          <button onclick="myFunction()" onmouseout="outFunc()" style="background: none; border: none; cursor: pointer; color: #292929; font-size: 18px; font-family: Switzer; font-weight: 600; line-height: 27px;">
+            <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+            Copy Email ID
+          </button>
+        </div>
+
+      </div>
+
+      <!--Linkedin-->
+
+      <a href="https://www.linkedin.com/in/harsuyash/" class ="CTA" target="_blank" rel="nofollow">Connect on LinkedIn</a>
+
+    </div>
+
+  </footer>
+
+
+  <script>
+  function myFunction() {
+    var copyText = document.getElementById("myInput");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(copyText.value);
+
+    var tooltip = document.getElementById("myTooltip");
+    tooltip.innerHTML = "Copied!";
+  }
+
+  function outFunc() {
+    var tooltip = document.getElementById("myTooltip");
+    tooltip.innerHTML = "Copy to clipboard";
+  }
+  </script>
+
+</body>
+</html>
