@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title> Har Suyash's UX Portfolio </title>
+
+  <!-- CSS -->
+  <link href="Improved-debugging-flow.css" rel="stylesheet" type="text/css">
+
+  <!-- RESPONSIVE -->
+  <meta name="viewport" content="width= device-width">
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/png" href="../hsb_favicon.png" >
+
+</head>
+
+<body>
+
+  <header class="header-container" width="100%">
+
+    <!--header item 1 - logo-->
+    <div class="name-tooltip">
+      <a href="../index.html">
+        <img src="../hsb_logo.svg" alt="Har Suyash Logo" width="56px" class="center">
+      </a>
+      <p class="name-tooltiptext">Har Suyash Bahadur</p>
+    </div>
+
+    <!--header item 2 - navbar-->
+    <span>
+      <nav>
+        <ul class="menu">
+          <li>
+            <a href="../index.html#projects">Projects</a>
+          </li>
+
+          <li>
+            <a href="../Aboutme.html">About me</a>
+          </li>
+        </ul>
+      </nav>
+    </span>
+
+    <!--header item 3 - linkedin-->
+
+    <a href="https://www.linkedin.com/in/harsuyash/" target="_blank" rel="nofollow" aria-label="LinkedIn"> <img src="../linkedin.svg" alt="" width="24px" class="center"> </a>
+
+
+  </header>
+
+
+  <main>
+
+    <div class="home-scroll">
+
+      <!--Intro to project-->
+
+      <div class="intro">
+        <h1> Improved debugging flow for API tests </h1>
+
+        <span style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 16px; margin-top:36px; margin-bottom:36px;">
+
+          <span style="display: flex;align-items: center;gap: 16px;">
+            <img src="../postman_logo.png" alt="" width="24px">
+            <p class="tags">Postman</p>
+          </span>
+
+          <p class="tags"> · </p>
+
+          <p class="tags">Product designer</p>
+
+          <p class="tags"> · </p>
+
+          <p class="tags">Lead on the initiative</p>
+
+
+        </span>
+
+        <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 24px; align-self: stretch;">
+
+          <h4> Key contributions: </h4>
+
+          <ul style="display: flex; flex-direction: column; align-items: flex-start; gap: 16px;">
+            <li> Investigating and communicating with the team about what users actually needed. </li>
+            <li> Used affinity mapping to find patterns in user asks and user journey to align the team. </li>
+            <li> Delivered the final UI with visual grouping and interactions based on the user flows. </li>
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!--BIG Image-->
+    <img src="API testing.png" width="100%">
+
+    <!--Main content-->
+    <div class="home-scroll">
+
+
+      <!--Part 1: Background-->
+      <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 48px; padding-top:84px;">
+
+        <h2>Background</h2>
+
+
+        <!--Sub-Part 1-->
+        <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 24px;">
+          <h4>What is Postman?</h4>
+          <p>Postman is a tool used by software developers to develop, test and deploy APIs.</p>
+        </div>
+        <!--Sub-Part 2-->
+        <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 24px;">
+          <h4>What is API and API testing?</h4>
+          <p>
+            API (application programming interface) is what helps a piece of software to communicate with another. Let’s say our data is in a box with slits on one side through which we can put things inside, take things out or take a peek at what exists. This becomes an interface to interact with the box.
+          </p>
+          <!--Image with description-->
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 16px; margin:12px 0px;">
+            <img src="Interface.png" alt="An illustration showing a box with some openings on one side where things are inserted and ejected from the other side. This is supposed to visualise the definition of the interface and API testing described on top." width="100%">
+            <p class="tags" style="max-width:560px">Testing how the box behaves when we interact with it. If the output is as per the expectation, the test passes.</p>
+          </div>
+          <p>
+            Now for the system to function reliably, certain inputs should give certain expected outputs. Validating this output or response from the server after an API call against a set of expectations is called API (functional) testing.
+          </p>
+        </div>
+
+      </div>
+
+
+      <!--Part 2: The problem-->
+      <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 48px; padding-top:84px;">
+
+        <h2>The problem</h2>
+
+
+        <!--Sub-Part 1-->
+        <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 24px;">
+          <h4>What people were asking?</h4>
+          <p>
+            At the start of the project we were looking at isolated user requests that told us to add a link to the request or tests somewhere or export console logs, etc.
+          </p>
+          <p>
+            I created affinity maps to present these problems with the team in a way to make a case for addressing the testing/debugging experience instead of the isolated Jira tickets.
+          </p>
+          <!--Image with description-->
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 16px; margin:12px 0px;">
+            <img src="Affinity-map.png" alt="Screenshot of the affinity map in figjam" width="100%">
+            <p class="tags" style="max-width:560px">Representational artefact: grouping all the smaller user requests and UX fail tickets to point out patterns in the overall flow</p>
+          </div>
+          <p>
+            Secondly, the simplest and most effective tool a team can use while addressing any UX problem is to create a detailed user journey map. Different people carry a different impression of the journey in their head (or none at all) until it is laid out in front of everyone to define expectations and derive a clearer picture.
+          </p>
+          <!--Image with description-->
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 16px;margin:12px 0px;">
+            <img src="User-journey.png" alt="Screenshot of the user journey map in figjam" width="100%">
+            <p class="tags" style="max-width:560px">Representational artefact: working with the team after user research to layout the whole user journey.</p>
+          </div>
+        </div>
+
+        <!--Sub-Part 2-->
+        <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 24px;">
+          <h4>Getting to the root of the problem</h4>
+          <!--Image with description-->
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 16px; margin:12px 0px;">
+            <img src="Critical-journey.png" alt="A flow chart showing the typical user flow while debugging where the gap in our product is - Helping users peak in past to know what happened and be able to isolate problems so that they know where to look for the root-cause." width="100%">
+            <p class="tags" style="max-width:560px">A simplified diagram of what a typical debugging journey may look like.</p>
+          </div>
+          <p>
+            While our product already allowed users to run tests and view a result of what passed and what failed, it did not provide a fitting experience to start the debugging flow. What we realised will help users here was knowing-
+          </p>
+          <ol style="margin-left:16px;">
+            <li>What exactly was sent with the API request?</li>
+            <li>What was the response received from the server?</li>
+            <li>What was sent or received before and after the point of failure?</li>
+            <li>What were the test assertions? (exact expectation that failed)</li>
+          </ol>
+        </div>
+
+      </div>
+
+
+
+      <!--Part 3: Current state and challenges-->
+      <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 48px; padding-top:84px;">
+
+        <h2>Current state and challenges</h2>
+
+        <!--Sub-Part 1-->
+        <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 24px;">
+          <h4>Too much information</h4>
+          <p>
+            While we were able to look deeper in the users’ journey and get clarity into what was needed, there were some challenges we faced-
+          </p>
+          <ol style="margin-left:16px;">
+            <li>It was a challenge from the back-end to store all this information at the time of run and it could slow down the operation.</li>
+            <li>Requests sent and response received have a lot of different type of data like status codes, headers, body, etc. Representing them in an easy to consume way can be a challenge.</li>
+            <li>We had an existing interface that a lot of users were used to. So we had to find a balance between re-imagining certain flows and maintaining the familiarity to not affect what was already solved for.</li>
+          </ol>
+
+          <!--Image with description-->
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 16px; margin:12px 0px;">
+            <img src="Old UI1.png" alt="Screenshot of the old UI having too much information, no clear visual hierarchy and poor accessibility" width="100%">
+            <p class="tags" style="max-width:560px">Old interface lacking clear info hierarchy: Lines getting cut and difficulty in differentiating relevant information</p>
+          </div>
+
+          <!--Image with description-->
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 16px; margin:12px 0px;">
+            <img src="Old UI2.png" alt="Screenshot of the old UI with difficult to discover information and unintuitive interactions" width="100%">
+            <p class="tags" style="max-width:560px">Old interface with non-intuitive interactions and difficulty in discovering and consuming information</p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!--Part 4: Explorations and solution-->
+      <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 48px; padding-top:84px;">
+
+        <h2>Explorations and solution</h2>
+
+        <!--Sub-Part 1-->
+        <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 24px;">
+          <h4>Approach: Two-panel selector</h4>
+          <p>
+            After trying out a bunch of layout and interactions that would make way for a logical debugging flow, we decided on the two-panel selector approach.
+          </p>
+          <ol style="margin-left:16px;">
+            <li>The default view is visually not very different from the old UI making it easier to transition.</li>
+            <li>The job of going through the test results and decide what to focus on can be done alongside the second job of identifying areas of failures without losing context or disrupting the flow of information.</li>
+          </ol>
+
+          <!--Image with description-->
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 16px; margin:12px 0px;">
+            <img src="2panes.gif" alt="Animated GIF showing the two-pane selection interaction" width="150%">
+            <p class="tags">Selecting a request card with test results and viewing the snapshot of its execution in a split pane view. The left side list helps in deciding what to focus on/ debug and the right side helps to dig deeper and identify potential causes/ where to look for them (request/ response or assertions).</p>
+          </div>
+
+        </div>
+
+
+
+        <!--Sub-Part 2-->
+        <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 24px;">
+          <h4>Exploring layouts for left hand side pane</h4>
+
+          <!--Image with description-->
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 16px; margin:12px 0px;">
+            <img src="LHS-flow.png" alt="" width="150%">
+            <p class="tags">How the flow of information in the LHS pane can be</p>
+          </div>
+
+          <p>
+            I tried different layouts to establish the intended flow of information. Although we did not want to change the existing UI drastically in one go, I thought of experimenting with progressive disclosure to optimise for cognitive load instead of clicks.
+          </p>
+
+          <!--Image with description-->
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 16px; margin:12px 0px;">
+            <img src="LHS-explorations.png" alt="Showing various layout and UI approaches" width="100%">
+            <p class="tags">Experimenting with layouts to facilitate the intended information flow</p>
+          </div>
+
+        </div>
+
+
+        <!--Sub-Part 3-->
+        <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 24px;">
+          <h4>Typography and proximity for better visual grouping</h4>
+
+          <p>
+            Having experimented with these ideas, we wanted to reach to a desired flow with smaller validated changes. Hence, to improve the UI I had to rely on the fundamental principles- typography and proximity for better visual grouping.
+          </p>
+
+          <!--Image with description-->
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 16px; margin:12px 0px;">
+            <img src="LHS-final.png" alt="A side by side comparison of oldand new UI showing better visual grouping and scanability in the new UI" width="150%">
+            <p class="tags">Small changes to make the UI a lot more scannable.</p>
+          </div>
+
+        </div>
+
+        <!--Sub-Part 4-->
+        <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 24px;">
+          <h4>Exploring layouts for right hand side pane</h4>
+
+          <!--Image with description-->
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 16px; margin:12px 0px;">
+            <img src="RHS-explorations.png" alt="Showing various layout and UI approaches" width="100%">
+            <p class="tags">Experimenting with different ways of organising the information on RHS pane.</p>
+          </div>
+          <p>
+            While there were different types of information to be shown, we had to aggressively prioritise for the use-case instead of presenting everything and letting the users struggle with it.
+          </p>
+          <p>
+            The last approach seemed interesting for debugging errors in request execution but debugging the test assertions was a different scenario. In the latter, the response body was what mattered the most and needed enough space to be consumed properly.
+          </p>
+
+        </div>
+
+        <!--Sub-Part 5-->
+        <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 24px;">
+          <h4>"Confused?!" Going back to the user journey</h4>
+
+          <p>
+            We went back to the user's debugging journeys in different real-life scenarios and came across the network tab in inspect tool of the browser. This is something developers often use while debugging on the web and we thought to base our designs on a similar experience.
+          </p>
+
+          <!--Image with description-->
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 16px; margin:12px 0px;">
+            <img src="RHS-final.png" alt="Final approach with left and right side panes" width="150%">
+          </div>
+
+          <p>
+            With this we tried to keep the UI as simple as possible and minimise the information as well as navigational load.
+          </p>
+
+          <ol style="margin-left:16px;">
+            <li>Request body is the most important information so we give it the complete pane with ability to format, search through and copy.</li>
+            <li>Headers include other meta information that is used to communicate with the server. Clubbing request and response headers together helps users compare and understand this communication. </li>
+          </ol>
+
+        </div>
+
+      </div>
+
+      <!--Part 5: Impact-->
+      <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 48px; padding-top:84px;">
+
+        <h2>Conclusion</h2>
+
+        <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 24px;">
+          <h4>Measuring impact</h4>
+
+          <p>
+            The debugging journey is very iterative and users may have to run the tests again and again after making some changes. To measure the impact of our improvements, we tracked the number of intermediate runs it takes to debug a test as well as the final number of runs with successful tests.
+          </p>
+
+          <p>
+            Our findings almost 3 months after the release of the improvement revealed that only slightly more tests were debugged with less than 5 intermediate runs (~5% change) and lesser took more than 25 runs. The number of successful runs also increased by only 1%.
+          </p>
+
+        </div>
+
+      </div>
+
+      <!--END-->
+      <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 48px; padding-top:84px;">
+        <h2>Thank You!</h2>
+      </div>
+
+      <div style="margin-top:84px">
+      <!-- Cards for postman projects-->
+      <ul class="card-layout">
+
+
+        <!-- Cards 2-->
+        <li class="card">
+
+          <div class="card-inside">
+
+            <div><img src="../variables.png" alt=""></div>
+
+            <!-- Cards 2 content -->
+            <div>
+              <h4> <a href="../Variable-resolution/Variable resolution.html" class="card-link">Accessible error signifier</a> </h4>
+              <p>
+                A small change big impact story of creating subtle yet effective error signifiers and reducing the error.
+              </p>
+
+              <p class="tags"> UI/UX design </p>
+
+            </div>
+
+          </div>
+
+          <!-- Cards 2 hover line -->
+          <div class="card-hover"></div>
+        </li>
+
+        <!-- Cards 3-->
+        <li class="card">
+
+          <div class="card-inside">
+
+            <div><img src="../EDUS2.png" alt=""></div>
+
+            <!-- Cards 3 content -->
+            <div>
+              <h4> <a href="../Engagement-in-learning/engagement-in-learning.html" class="card-link">Engagement in learning</a> </h4>
+              <p>
+                An exploratory research to improve students' emotional and cognitive engagement in class participation.
+              </p>
+
+              <p class="tags"> Design research </p>
+
+            </div>
+
+          </div>
+
+          <!-- Cards 3 hover line -->
+          <div class="card-hover"></div>
+        </li>
+
+        <!-- Cards 1-->
+        <li class="card">
+
+          <div class="card-inside">
+
+            <div><img src="../POUR.png" alt=""></div>
+
+            <!-- Cards 1 content -->
+            <div>
+              <h4> <a href="../Pour/Pour.html" class="card-link">Assistive device to pour</a> </h4>
+              <p>
+                A device that helps visually impaired users safely pour hot liquids by communicating with its form.
+              </p>
+
+              <p class="tags"> Industrial design </p>
+
+            </div>
+
+          </div>
+
+          <!-- Cards 1 hover line -->
+          <div class="card-hover"></div>
+        </li>
+      </ul>
+      </div>
+
+
+    </div>
+
+  </main>
+
+
+  <footer id="contact">
+
+    <!-- Contact -->
+
+    <div class="contact-container">
+      <div style="width: 100%; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+        <h2>Get in touch</h2>
+        <p>Let's connect to discuss how I can bring value to your team as a designer.</p>
+      </div>
+
+      <!--Email-->
+      <div style=" width: 90%; justify-content: space-between; align-items: center; display: inline-flex; padding-left: 16px; padding-right: 16px; padding-top: 12px; padding-bottom: 12px; border-radius: 4px; border: 0.50px #191919 solid;">
+
+        <input type = "text" value="harsuyash07@gmail.com" id="myInput" style=" width: 60%; color: #292929; font-size: 18px; font-family: Switzer; font-weight: 400; line-height: 27px; word-wrap: break-word; border: none; background: none" readonly>
+
+        <div class="tooltip">
+          <button onclick="myFunction()" onmouseout="outFunc()" style="background: none; border: none; cursor: pointer; color: #292929; font-size: 18px; font-family: Switzer; font-weight: 600; line-height: 27px;">
+            <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+            Copy Email ID
+          </button>
+        </div>
+
+      </div>
+
+      <!--Linkedin-->
+
+      <a href="https://www.linkedin.com/in/harsuyash/" class ="CTA" target="_blank" rel="nofollow">Connect on LinkedIn</a>
+
+    </div>
+
+  </footer>
+
+
+  <script>
+  function myFunction() {
+    var copyText = document.getElementById("myInput");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(copyText.value);
+
+    var tooltip = document.getElementById("myTooltip");
+    tooltip.innerHTML = "Copied!";
+  }
+
+  function outFunc() {
+    var tooltip = document.getElementById("myTooltip");
+    tooltip.innerHTML = "Copy to clipboard";
+  }
+  </script>
+
+</body>
+</html>
