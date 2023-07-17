@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title> Har Suyash's UX Portfolio </title>
+
+  <!-- CSS -->
+  <link href="Pour.css" rel="stylesheet" type="text/css">
+
+  <!-- RESPONSIVE -->
+  <meta name="viewport" content="width= device-width">
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/png" href="../hsb_favicon.png" >
+
+</head>
+
+<body>
+
+  <header class="header-container" width="100%">
+
+    <!--header item 1 - logo-->
+    <div class="name-tooltip">
+      <a href="../index.html">
+        <img src="../hsb_logo.svg" alt="Har Suyash Logo" width="56px" class="center">
+      </a>
+      <p class="name-tooltiptext">Har Suyash Bahadur</p>
+    </div>
+
+    <!--header item 2 - navbar-->
+    <span>
+      <nav>
+        <ul class="menu">
+          <li>
+            <a href="../index.html#projects">Projects</a>
+          </li>
+
+          <li>
+            <a href="../Aboutme.html">About me</a>
+          </li>
+        </ul>
+      </nav>
+    </span>
+
+    <!--header item 3 - linkedin-->
+
+    <a href="https://www.linkedin.com/in/harsuyash/" target="_blank" rel="nofollow" aria-label="LinkedIn"> <img src="../linkedin.svg" alt="" width="24px" class="center"> </a>
+
+
+  </header>
+
+
+  <main>
+
+    <div class="home-scroll">
+
+      <!--Intro to project-->
+
+      <div class="intro">
+        <h1> Assistive device to pour for the blind</h1>
+
+        <span style="display: flex; flex-wrap: wrap; align-items: center;; gap: 16px; margin-top:36px; margin-bottom:36px;">
+
+          <span style="display: flex; align-items: center;gap: 16px;">
+            <img src="../IITB_logo.png" alt="" width="24px">
+            <p class="tags">Course project</p>
+          </span>
+
+          <p class="tags"> · </p>
+
+          <p class="tags">Product ergonomics</p>
+
+          <p class="tags"> · </p>
+
+          <p class="tags">Under Prof. Swati Pal</p>
+
+
+        </span>
+
+        <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 24px; align-self: stretch;">
+
+          <h4> Summary: </h4>
+
+          <ul style="display: flex; flex-direction: column; align-items: flex-start; gap: 16px;">
+            <li> Undentified unsolved problems with blind-fold simulation and interviews. </li>
+            <li> Exploring multiple solutions and narrowing using SWOT analysis. </li>
+            <li> Designed and prototype a device that could provide the tactile feedback loop. </li>
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!--BIG Image-->
+    <img src="asset/intro teaser.png" width="100%">
+
+    <!--Main content-->
+    <div class="home-scroll">
+
+      <!--Part 1: Background-->
+      <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 48px; padding-top:84px;">
+
+        <h2>Background</h2>
+
+        <!--Sub-Part 1-->
+        <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 24px;">
+          <h4>"Design intervention to help visually impaired persons safely pour and measure hot liquids."</h4>
+        </div>
+
+        <!--Sub-Part 2-->
+        <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 24px;">
+          <h4>The concern</h4>
+          <p>
+            Pouring and measuring liquids is a task we do as a part of various day to day activities like cooking, serving water, making tea and taking medicines. We rely heavily on visual feedback and hand eye coordination for performing the task safely and efficiently. Such tasks can be extremely difficult for the visually impaired. Without a visual feedback, a lot of information is missing that is essential such as position of cup and container, level of liquid, trajectory of liquid, etc. This project focuses on such cognitive aspects of ergonomics.
+          </p>
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 16px; margin:12px 0px;">
+            <div style="display: flex; flex-direction: row; align-items: center; gap: 16px;">
+              <img src="asset/pic1.png" alt="image of two variables as seen by someone with red-green colourblindness" width="100%">
+              <img src="asset/pic2.png" alt="" width="100%">
+            </div>
+            <p class="tags" style="max-width:560px">Images captured from Molly Burke's and Drew Hunthausen's videos</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!--Part 2: The problem-->
+      <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 48px; padding-top:84px;">
+
+        <h2>The problem</h2>
+
+        <!--Sub-Part 1-->
+        <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 24px;">
+          <h4>Blindfold simulation</h4>
+          <p>
+            I performed a blindfold simulation on myself for different scenarios and with different utensils. I observed the behaviour and the challenges first hand and analysed them through a video, breaking down into small tasks and challenges faced in each one.
+          </p>
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 16px; margin:12px 0px;">
+            <img src="asset/Simulation.png" alt="A picture of me with a blindfold pouring water from a jug" width="100%">
+          </div>
+        </div>
+
+        <!--Sub-Part 2-->
+        <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 24px;">
+          <h4>User journey</h4>
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 16px; margin:12px 0px;">
+            <img src="asset/Scenario 1.png" alt="Showing different stages like locating, aligning, pouring and stopping" width="100%">
+          </div>
+          <h4>Pouring cold water from a jug: insights</h4>
+          <ol style="margin-left:16px;">
+            <li>Large mouth and bulky nature of the jug creates difficulty.</li>
+            <li>Difficult to aim inside the glass, aligning takes some time.</li>
+            <li>No feedback of how much water is pouring and is all of it going inside?</li>
+            <li>Difference in temperature of glass’ outer surface provides feedback of the level of water filled inside.</li>
+          </ol>
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 16px; margin:12px 0px;">
+            <img src="asset/Scenario 2.png" alt="Showing different stages like locating, aligning, pouring and stopping" width="100%">
+          </div>
+          <h4>Pouring hot tea using electronic leveler: Insights</h4>
+          <ol style="margin-left:16px;">
+            <li>Storing electronic assistive devices: they might get misplaced.</li>
+            <li>Leveler does not provide continuous feedback and creates a waiting time of doubt.</li>
+            <li>Grooves on the thermos head provide friction for support against rim and clue to align.</li>
+            <li>Flow in a thermos is controlled by the small openings, easy to open and shut the flow at any time with a press</li>
+          </ol>
+        </div>
+
+      </div>
+
+      <!--Part 3: The problem-->
+      <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 48px; padding-top:84px;">
+
+        <h2>SWOT Analysis</h2>
+
+        <!--Sub-Part 1-->
+        <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 24px;">
+          <p>
+            For developing assistive devices one needs to consider the abilities along with the disabilities of the user. It also becomes important to consider the environment of the user and the threats imposed by it. In their study, Fong-Gong Wu, Min-Yuan Ma, Ro-Han Chang discuss how SWOT analysis can be used to design a criteria for the design of an assistive device for a specific context.
+          </p>
+          <p>
+            The SWOT analysis for the current scenarios was done by listing out all the user statements, insights, observations, and design ideas and the sorting them into groups. Strengths, weaknesses, threats and opportunities were induced from those statements.
+          </p>
+        </div>
+
+        <!--Sub-Part 2-->
+        <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 24px;">
+          <h4>Strengths</h4>
+          <ol style="margin-left:16px;">
+            <li>Gauge weight, balance, location and alignment to facilitate direct manipulation of light vessels at normal temperature.</li>
+            <li>Can perform tasks step by step by assessing sequential feedback for each step at a time.</li>
+            <li>Good, naturally learnt tactile sense to discriminate between different textures and temperature qualitatively.</li>
+            <li>Easy to pour with small openings. They also provide enhanced audio feedback due to high pressure of a small stream.</li>
+          </ol>
+        </div>
+
+        <!--Sub-Part 3-->
+        <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 24px;">
+          <h4>Weakness</h4>
+          <ol style="margin-left:16px;">
+            <li>Difficulty in aligning multiple objects.</li>
+            <li>Difficulty to rely on Tactilo-Kinesthetic Feedback for heavy and hot objects.</li>
+            <li>Lack of continuous and multiple feedbacks (of position of vessels, trajectory of liquids) restrict user from taking impromptu regulation (of position of vessels, trajectory of liq.)</li>
+            <li>Difficulty in handling and locating multiple discrete objects.</li>
+          </ol>
+        </div>
+
+        <!--Sub-Part 4-->
+        <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 24px;">
+          <h4>Opportunities</h4>
+          <ol style="margin-left:16px;">
+            <li>A Multipurpose device for funneling, filtering and measuring.</li>
+            <li>An intermediate measuring device to measure first and then pour.</li>
+            <li>A separate dispensing system for any liquid.</li>
+            <li>Electronic device with amplified/ augmented sensory feedback.</li>
+          </ol>
+        </div>
+
+        <!--Sub-Part 5-->
+        <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 24px;">
+          <h4>Threats</h4>
+          <ol style="margin-left:16px;">
+            <li>Direct contact of liquid while pouring can cause burns.</li>
+            <li>Getting burnt by touching a hot vessel while locating them.</li>
+            <li>Burning sensation and discomfort due to steam rising from vessel.</li>
+            <li>Dropping and breaking (also losing) objects.</li>
+          </ol>
+        </div>
+
+        <!--Sub-Part 6-->
+        <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 24px;">
+          <h4>Generating ideas from SWOT</h4>
+          <p>
+            After SWOT analysis, Weihrich (1982) proposed a strategy called the ‘‘TOWS’’ (Threats, Opportunities, Weaknesses, and Strengths). It is a method of systematically identifying relationships between these factors and suggesting solutions from the analysis. TOWS maximizes the Strengths and Opportunities, while minimizing the Weaknesses and Threats.
+          </p>
+
+          <p>
+            The corresponding labels with the sketches (SnOn/ WnOn) indicate the nth SWOT principle they are linked to.
+          </p>
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 16px; margin:12px 0px;">
+            <img src="asset/Solutions.png" alt="Sketches of ideas based on SWOT" width="100%">
+          </div>
+        </div>
+
+        <!--Sub-Part 7-->
+        <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 24px;">
+          <h4>Scampering with hero ideas</h4>
+          <p>
+            Concept S4O1 that uses a funnel like mechanism and S3O4 that has a floater for continuous feedback through electronic sound are the top two concepts and I thought to combine these two and have a device that helps in both pouring and measuring liquids.
+          </p>
+
+          <p>
+            The concept borrowed the idea of a funnel-like structure from S3O4 and a floater for continuous feedback from S4O1 while adding an extra feature of a base for stability and helping in alignment by making a unifying system between the cup and the pourer, using the continuous form.
+          </p>
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 16px; margin:12px 0px;">
+            <img src="asset/The chosen one.png" alt="Sketches of final ideas" width="100%">
+          </div>
+        </div>
+
+      </div>
+
+      <!--Part 4: The product-->
+      <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 48px; padding-top:84px;">
+
+        <h2>Final Product</h2>
+        <p>
+          An independent apparatus that binds any vessel and a container into a system with tangible connections. It gives a form to the relations between pouring and poured vessel in space. Thus making up for the lack of visual referencing and estimations and facilitating seeing through hands.
+        </p>
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 16px; margin:12px 0px;">
+          <img src="asset/POUR.png" alt="" width="150%">
+        </div>
+
+        <!--Sub-Part 1-->
+        <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 24px; width:100%;">
+          <h4>A single hand stroke to initialize and then read the markings</h4>
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 16px; margin:12px 0px; width:100%;">
+            <img src="asset/initialization.gif" alt="" width="100%">
+          </div>
+        </div>
+
+        <!--Sub-Part 2-->
+        <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 24px; width:100%;">
+          <h4>As the kettle fits in the curve of base, it is aligned with mug</h4>
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 16px; margin:12px 0px; width:100%;">
+            <img src="asset/Align base.png" alt="" width="100%">
+          </div>
+        </div>
+
+        <!--Sub-Part 3-->
+        <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 24px; width:100%;">
+          <h4>The opening of the kettle settles in the curves of the ring</h4>
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 16px; margin:12px 0px; width:100%;">
+            <img src="asset/Align top pour.png" alt="" width="100%">
+          </div>
+        </div>
+
+        <!--Sub-Part 4-->
+        <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 24px; width:100%;">
+          <h4>Continuous feedback from the floater rising with the liquid</h4>
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 16px; margin:12px 0px; width:100%;">
+            <img src="asset/rising.gif" alt="" width="100%">
+          </div>
+        </div>
+
+        <!--Sub-Part 5-->
+        <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 24px; width:100%;">
+          <h4>Stop pouring as the floater reaches the desired level</h4>
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 16px; margin:12px 0px; width:100%;">
+            <img src="asset/stop.png" alt="" width="100%">
+          </div>
+        </div>
+
+      </div>
+
+      <!--Part 5: Testing-->
+      <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 48px; padding-top:84px;">
+        <h2>Testing</h2>
+
+        <!--Sub-Part 1-->
+        <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 24px; width:100%;">
+          <h4>Prototype for Testingl</h4>
+          <p>
+            A thermocol working prototype was made for the purpose of testing. It consisted of the base for stability, a funnel on top for aligning and pouring through, a stem to link the two that also carried the markings corresponding to the height of the liquid. A U shaped stem with a floater is to be placed inside the mug.
+          </p>
+
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 16px; margin:12px 0px; width:100%;">
+            <img src="asset/Final proto.png" alt="Thermocol model" width="100%">
+          </div>
+        </div>
+
+        <!--Sub-Part 1-->
+        <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 24px; width:100%;">
+          <h4>Blindfold testing</h4>
+          <p>
+            The project was completed in lockdown condition due to COVID 19 and it was not possible to test it with actual users. Thus, it was tested at home by blindfolding people. The product was introduced to them only after blindfolding and was given to be used.
+          </p>
+          <p>
+            The product was tested against some qualitative and quantitative parameters. The users were first asked to fill a full cup without the product and then to do the same with the product. Time for both the activities was recorded for a time motion analysis. The other parameters were amount of spilling of water and accuracy of filling the required quantity.
+          </p>
+
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 16px; margin:12px 0px; width:100%;">
+            <img src="asset/testwithout.gif" alt="Control test without product" width="100%">
+            <p class="tags" style="max-width:560px">Filling half cup without the product: spilling and more time</p>
+          </div>
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 16px; margin:12px 0px; width:100%;">
+            <img src="asset/testwith.gif" alt="Experiment test with product" width="100%">
+            <p class="tags" style="max-width:560px">Filling half cup water with the product: user more confident</p>
+          </div>
+        </div>
+
+        <!--Sub-Part 1-->
+        <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 24px; width:100%;">
+          <h4>Results: works but a bit overwhelming at start</h4>
+          <p>
+            The product was successful in making the pouring and measuring better in terms of accuracy and safety. It did not make a considerable difference in terms of efficiency. It could prevent water spilling and overfilling but still took some time for the user to familiarize herself with the product.
+          </p>
+          <p>
+            In the time motion analysis, both the tasks are done in a decent amount of time. The task without the product was done in 35 sec and with the product was done in 25 sec. There is a 10 sec difference but as compared to an average sighted person who can fill the glass in about 5-10 sec, it is still way more than double.
+          </p>
+          <p>
+            The time for aligning was more but it helped later. The time for pouring was reduced due to continuous feedback giving confidence to the user.
+          </p>
+        </div>
+
+      </div>
+
+      <!--END-->
+      <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 48px; padding-top:84px;">
+        <h2>Thank You!</h2>
+      </div>
+
+      <div style="margin-top:84px">
+      <!-- Cards for postman projects-->
+      <ul class="card-layout">
+        <!-- Cards 1-->
+        <li class="card">
+
+          <div class="card-inside">
+
+            <div><img src="../API testing.png" alt=""></div>
+
+            <!-- Cards 1 content -->
+            <div>
+              <h4> <a href="../Debugging-flow/Improved-debugging-flow.html" class="card-link">Improved debugging flow</a> </h4>
+              <p>
+                Led the problem discovery, journey mapping and design of the debuging flow for API tests in Postman.
+              </p>
+
+              <p class="tags"> UI/UX design </p>
+
+            </div>
+
+          </div>
+
+          <!-- Cards 1 hover line -->
+          <div class="card-hover"></div>
+        </li>
+
+        <!-- Cards 2-->
+        <li class="card">
+
+          <div class="card-inside">
+
+            <div><img src="../variables.png" alt=""></div>
+
+            <!-- Cards 2 content -->
+            <div>
+              <h4> <a href="../Variable-resolution/Variable resolution.html" class="card-link">Accessible error signifier</a> </h4>
+              <p>
+                A small change big impact story of creating subtle yet effective error signifiers and reducing the error.
+              </p>
+
+              <p class="tags"> UI/UX design </p>
+
+            </div>
+
+          </div>
+
+          <!-- Cards 2 hover line -->
+          <div class="card-hover"></div>
+        </li>
+
+        <!-- Cards 3-->
+        <li class="card">
+
+          <div class="card-inside">
+
+            <div><img src="../EDUS2.png" alt=""></div>
+
+            <!-- Cards 3 content -->
+            <div>
+              <h4> <a href="../Engagement-in-learning/engagement-in-learning.html" class="card-link">Engagement in learning</a> </h4>
+              <p>
+                An exploratory research to improve students' emotional and cognitive engagement in class participation.
+              </p>
+
+              <p class="tags"> Design research </p>
+
+            </div>
+
+          </div>
+
+          <!-- Cards 3 hover line -->
+          <div class="card-hover"></div>
+        </li>
+      </ul>
+      </div>
+
+
+    </div>
+
+  </main>
+
+
+  <footer id="contact">
+
+    <!-- Contact -->
+
+    <div class="contact-container">
+      <div style="width: 100%; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+        <h2>Get in touch</h2>
+        <p>Let's connect to discuss how I can bring value to your team as a designer.</p>
+      </div>
+
+      <!--Email-->
+      <div style=" width: 90%; justify-content: space-between; align-items: center; display: inline-flex; padding-left: 16px; padding-right: 16px; padding-top: 12px; padding-bottom: 12px; border-radius: 4px; border: 0.50px #191919 solid;">
+
+        <input type = "text" value="harsuyash07@gmail.com" id="myInput" style=" width: 60%; color: #292929; font-size: 18px; font-family: Switzer; font-weight: 400; line-height: 27px; word-wrap: break-word; border: none; background: none" readonly>
+
+        <div class="tooltip">
+          <button onclick="myFunction()" onmouseout="outFunc()" style="background: none; border: none; cursor: pointer; color: #292929; font-size: 18px; font-family: Switzer; font-weight: 600; line-height: 27px;">
+            <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+            Copy Email ID
+          </button>
+        </div>
+
+      </div>
+
+      <!--Linkedin-->
+
+      <a href="https://www.linkedin.com/in/harsuyash/" class ="CTA" target="_blank" rel="nofollow">Connect on LinkedIn</a>
+
+    </div>
+
+  </footer>
+
+
+  <script>
+  function myFunction() {
+    var copyText = document.getElementById("myInput");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(copyText.value);
+
+    var tooltip = document.getElementById("myTooltip");
+    tooltip.innerHTML = "Copied!";
+  }
+
+  function outFunc() {
+    var tooltip = document.getElementById("myTooltip");
+    tooltip.innerHTML = "Copy to clipboard";
+  }
+  </script>
+
+</body>
+</html>
