@@ -35,7 +35,7 @@ body{
 h1{
   font-family: "Boska", serif;
   font-size: 72px;
-  font-weight: 700;
+  font-variation-settings: 'wght' 700.0;
   line-height: 84px;
   letter-spacing: 1.2px;
   margin-bottom: 24px;
@@ -45,21 +45,21 @@ h1{
 h2{
   font-family: "Switzer", sans-serif;
   font-size: 48px;
-  font-weight: 600;
+  font-variation-settings: 'wght' 600.0;
   line-height: 60px;
 }
 
 h3{
   font-family: "Switzer", sans-serif;
   font-size: 32px;
-  font-weight: 600;
+  font-variation-settings: 'wght' 600.0;
   line-height: 42px;
 }
 
 h4{
   font-family: "Switzer", sans-serif;
   font-size: 24px;
-  font-weight: 600;
+  font-variation-settings: 'wght' 600.0;
   line-height: 36px;
 }
 
@@ -128,7 +128,7 @@ a{
 }
 
 .current-page{
-  font-weight: 600;
+  font-variation-settings: 'wght' 600.0;
   border-bottom: 2px solid #ED1D68;
 }
 
@@ -163,7 +163,7 @@ main{
   align-items: center;
   gap: 12px;
   border-radius: 4px;
-  font-weight: 600;
+  font-variation-settings: 'wght' 600.0;
 }
 
 .CTA2:hover{
@@ -186,7 +186,7 @@ main{
   border-radius: 4px;
   background: #191919;
   color: white;
-  font-weight: 500;
+  font-variation-settings: 'wght' 600.0;
 
   border: none;
   outline: none;
