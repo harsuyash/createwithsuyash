@@ -11,12 +11,16 @@ html,body{
 
 @font-face {
   font-family: "Switzer";
-  src: url(Switzer-Variable.ttf);
+  src: url(Switzer-Variable.woff2) format('woff2'),
+       url(Switzer-Variable.woff) format('woff'),
+       url(Switzer-Variable.ttf) format('truetype');
 }
 
 @font-face {
   font-family: "Boska";
-  src: url(Boska-Variable.ttf);
+  src: url(Boska-Variable.woff2) format('woff2'),
+       url(Boska-Variable.woff) format('woff'),
+       url(Boska-Variable.ttf) format('truetype');
 }
 
 body{
@@ -31,31 +35,35 @@ body{
 h1{
   font-family: "Boska", serif;
   font-size: 72px;
-  font-weight: 700;
+  font-weight: normal;
+  font-variation-settings: 'wght' 700.0;
   line-height: 84px;
   letter-spacing: 1.2px;
   margin-bottom: 24px;
-  -webkit-text-stroke: 0.75px #292929;
+  
 }
 
 h2{
   font-family: "Switzer", sans-serif;
   font-size: 48px;
-  font-weight: 600;
+  font-weight: normal;
+  font-variation-settings: 'wght' 600.0;
   line-height: 60px;
 }
 
 h3{
   font-family: "Switzer", sans-serif;
   font-size: 32px;
-  font-weight: 600;
+  font-weight: normal;
+  font-variation-settings: 'wght' 600.0;
   line-height: 42px;
 }
 
 h4{
   font-family: "Switzer", sans-serif;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: normal;
+  font-variation-settings: 'wght' 600.0;
   line-height: 36px;
 }
 
