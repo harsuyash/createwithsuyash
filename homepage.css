@@ -14,13 +14,14 @@ html,body{
   src: url(Switzer-Variable.woff2) format('woff2'),
        url(Switzer-Variable.woff) format('woff'),
        url(Switzer-Variable.ttf) format('truetype');
+  url(Switzer-Variable.otf) format('opentype');
 }
 
 @font-face {
   font-family: "Boska";
   src: url(Boska-Variable.woff2) format('woff2'),
        url(Boska-Variable.woff) format('woff'),
-       url(Boska-Variable.ttf) format('truetype');
+       url(Boska-Variable.otf) format('opentype');
 }
 
 body{
