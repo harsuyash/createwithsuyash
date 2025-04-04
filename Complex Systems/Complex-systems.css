@@ -15,6 +15,7 @@ html,body{
   src: URL(../Switzer-Variable.woff2) format('woff2'),
        URL(../Switzer-Variable.woff) format('woff'),
        URL(../Switzer-Variable.ttf) format('truetype');
+  URL(../Switzer-Variable.otf) format('opentype');
 }
 
 @font-face {
@@ -22,6 +23,7 @@ html,body{
   src: URL(../Boska-Variable.woff2) format('woff2'),
        URL(../Boska-Variable.woff) format('woff'),
        URL(../Boska-Variable.ttf) format('truetype');
+  URL(../Boska-Variable.otf) format('opentype');
 }
 
 body{
