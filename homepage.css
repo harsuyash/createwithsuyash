@@ -13,7 +13,7 @@ html,body{
   font-family: "Switzer";
   src: url(Switzer-Variable.woff2) format('woff2'),
        url(Switzer-Variable.woff) format('woff'),
-       url(Switzer-Variable.ttf) format('truetype');
+       url(Switzer-Variable.ttf) format('truetype'),
   url(Switzer-Variable.otf) format('opentype');
 }
 
