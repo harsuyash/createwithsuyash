@@ -77,6 +77,14 @@ a{
     color: #292929;
 }
 
+b{
+  font-family: "Switzer", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  color: #292929;
+}
+
 .tags{
 
   font-family: "Switzer", sans-serif;
