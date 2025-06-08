@@ -343,6 +343,35 @@ main{
   margin-bottom: 120px;
 }
 
+.video-wrapper {
+  position: relative;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+
+.video-wrapper iframe {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+}
+
+
+
+.project-section{
+  margin-top: 84px;
+}
+
+.project-section h3{
+  margin-bottom: 48px;
+}
+
+.project-section img{
+  border-radius: 4px;
+  width: 360px;
+}
+
 .card-layout{
   display: flex;
   flex-wrap: wrap;
